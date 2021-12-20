@@ -9,12 +9,8 @@ def users_full_name(first_name, last_name):
 
 full_name = users_full_name(first_name,last_name)
 
-
-
-
-
 print(f'''Welcome {full_name} to Day Trip Generator!
-This generator will give you a Destination to go too,
+This generator will give you a random Destination to go too,
 a Restaurant at that destination, a way of Transportation to get there,
 as well as a form of Entertainment for the evening!''')
 
