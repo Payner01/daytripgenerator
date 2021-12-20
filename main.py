@@ -1,8 +1,16 @@
 import random
 
-users_name = input('Please enter your full name: ')
+first_name = input('Please enter your first name: ')
+last_name = input('Please enter your last name: ')
 
-print(f'''Welcome {users_name} to Day Trip Generator!
+def users_full_name(first_name, last_name):
+    full_name = first_name + ' ' + last_name
+    return full_name
+
+full_name = users_full_name(first_name,last_name)
+
+
+print(f'''Welcome {full_name} to Day Trip Generator!
 This generator will give you a Destination to go too,
 a Restaurant at that destination, a way of Transportation to get there,
 as well as a form of Entertainment for the evening!''')
@@ -48,7 +56,7 @@ random_restaurant = select_random_restaurants()
 random_transportation = select_random_transportation()
 random_entertainment = select_random_entertainment()
 
-print(f'''Congratulations {users_name} on your random day trip! You have chosen {random_destination} as your random destination, {random_restaurant} as your random restaurant,
+print(f'''Congratulations {full_name} on your random day trip! You have chosen {random_destination} as your random destination, {random_restaurant} as your random restaurant,
 {random_transportation} as your random mode of transportation, and {random_entertainment} as your random choice of entertainment!''')
  
 
